@@ -1,0 +1,32 @@
+{
+  "name": "gastos_abertos_interface_module_example",
+  "version": "0.0.1",
+  "description": "Example how should work interface visualization components at gastos abertos website",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okfn-brasil/gastos_abertos_interface_module_example.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okfn-brasil/gastos_abertos_interface_module_example/issues"
+  },
+  "homepage": "https://github.com/okfn-brasil/gastos_abertos_interface_module_example",
+  "dependencies": {
+    "bower": "^1.3.12",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-less": "^2.0.1",
+    "gulp-sourcemaps": "^1.3.0",
+    "mocha": "^2.1.0",
+    "run-sequence": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp-webserver": "^0.9.0"
+  }
+}

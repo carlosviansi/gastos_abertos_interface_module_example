@@ -1,0 +1,22 @@
+{
+  "name": "gastos_abertos_interface_module_example",
+  "version": "0.0.1",
+  "homepage": "https://github.com/okfn-brasil/gastos_abertos_interface_module_example",
+  "authors": "",
+  "main": "main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "GPL v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "riotjs": "~2.0.7",
+    "d3plus": "~1.6.9"
+  }
+}
