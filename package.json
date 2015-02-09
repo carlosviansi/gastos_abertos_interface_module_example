@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
-    "start": "gulp server"
+    "start": "gulp server",
+    "postinstall": "npm install && ./node_modules/bower/bin/bower install && ./node_modules/gulp/bin/gulp.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,12 @@
     "gulp-autoprefixer": "^2.1.0",
     "gulp-less": "^2.0.1",
     "gulp-sourcemaps": "^1.3.0",
-    "mocha": "^2.1.0",
+    "main-bower-files": "^2.5.0",
     "run-sequence": "^1.0.2"
   },
   "devDependencies": {
-    "gulp-webserver": "^0.9.0"
+    "gulp-bower-normalize": "^1.0.3",
+    "gulp-webserver": "^0.9.0",
+    "mocha": "^2.1.0"
   }
 }
