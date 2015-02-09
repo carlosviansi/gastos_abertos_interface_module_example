@@ -1,12 +1,11 @@
-define(function (require) {
+define(['riot',  'messages'], function (riot, messages) {
 
-    var messages = require('./messages');
-    // var print = require('print');
-    console.log(messages.getHello());
-
-    return {
-        init: function () {
-            return 'Initializing...'
+    var app = {
+        init : function () {
+            riot.mount('todo', { title: 'My TODO app', items: [ {'title':'testando'}, {'title':'testando 2'} ] })
+            console.log(messages.getHello());
         }
     }
+
+    return app;
 });

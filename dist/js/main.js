@@ -4,9 +4,24 @@
 // directory.
 requirejs.config({
     baseUrl: './js/',
+    paths : {
+        riot : '../vendor/riotjs/js/riot',
+        tags : '../tags/'
+    },
+    shim : {
+        'riot': {
+            exports: 'riot'
+        }
+    }
 });
 // Start loading the main app file. Put all of
 // your application logic in there.
-require(['app'], function (app) {
-    console.log(app.init());
+
+require(['app', 'riot'], function (app, riot) {
+
+    window.riot = riot;
+
+    require(['tags/todo'], function (){
+        app.init();
+    });
 });
