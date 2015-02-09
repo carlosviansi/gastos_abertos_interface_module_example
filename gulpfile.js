@@ -14,7 +14,8 @@ var gulp = require('gulp'),
   runSequence = require('run-sequence'),
   webserver = require('gulp-webserver'),
   bower = require('main-bower-files'),
-  bowerNormalizer = require('gulp-bower-normalize');
+  bowerNormalizer = require('gulp-bower-normalize'),
+  riot = require('gulp-riot');
 
 gulp.task('less', function() {
   return gulp.src(config.src)
@@ -33,6 +34,13 @@ gulp.task('copy', function() {
         .pipe(gulp.dest(dest));
 });
 
+gulp.task('riotjs', function() {
+    return gulp.src(src + '/**/*.tag')
+        .pipe(riot())
+        .pipe(gulp.dest(dest))
+});
+
+
 gulp.task('vendor', function() {
     return gulp.src(bower(), {base: './bower_components'})
         .pipe(bowerNormalizer({bowerJson: './bower.json'}))
@@ -50,7 +58,7 @@ gulp.task('webserver', function() {
 
 
 gulp.task('default', function () {
-  runSequence('vendor', 'less', 'copy', function() {
+  runSequence('riotjs', 'vendor', 'less', 'copy', function() {
     console.log('js and css build after copy html');
   });
 });

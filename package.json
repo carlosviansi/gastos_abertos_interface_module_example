@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "start": "gulp server",
-    "postinstall": "npm install && ./node_modules/bower/bin/bower install && ./node_modules/gulp/bin/gulp.js"
+    "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/gulp/bin/gulp.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "gulp-less": "^2.0.1",
     "gulp-sourcemaps": "^1.3.0",
     "main-bower-files": "^2.5.0",
-    "run-sequence": "^1.0.2"
+    "run-sequence": "^1.0.2",
+    "gulp-riot": "~0.2.3"
   },
   "devDependencies": {
     "gulp-bower-normalize": "^1.0.3",
