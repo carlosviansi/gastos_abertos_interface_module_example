@@ -20,8 +20,5 @@ requirejs.config({
 require(['app', 'riot'], function (app, riot) {
 
     window.riot = riot;
-
-    require(['tags/todo'], function (){
-        app.init();
-    });
+    app.init();
 });

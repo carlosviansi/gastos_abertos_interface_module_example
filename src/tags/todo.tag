@@ -35,5 +35,4 @@
     item.done = !item.done
     return true
   }
-
 </todo>

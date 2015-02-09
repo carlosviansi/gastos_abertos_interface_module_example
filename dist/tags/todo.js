@@ -21,5 +21,4 @@ riot.tag('todo', '<h3>{ opts.title }</h3> <ul> <li each="{ items }"> <label clas
     return true
   }.bind(this);
 
-
 });
