@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "start": "gulp server",
-    "postinstall": "npm install && ./node_modules/bower/bin/bower install && ./node_modules/gulp/bin/gulp.js"
+    "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/gulp/bin/gulp.js"
   },
   "repository": {
     "type": "git",
