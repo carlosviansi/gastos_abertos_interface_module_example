@@ -8,6 +8,9 @@ requirejs.config({
         riot : '../vendor/riotjs/js/riot',
         tags : '../tags/'
     },
+    packages: [{
+        name: "example"
+    }],
     shim : {
         'riot': {
             exports: 'riot'
@@ -17,7 +20,7 @@ requirejs.config({
 // Start loading the main app file. Put all of
 // your application logic in there.
 
-require(['app', 'riot'], function (app, riot) {
+require(['example', 'riot'], function (app, riot) {
 
     window.riot = riot;
     app.init();

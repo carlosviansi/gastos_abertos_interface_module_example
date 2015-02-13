@@ -1,4 +1,4 @@
-define(['riot',  'messages'], function (riot, messages) {
+define(['riot',  'example/messages'], function (riot, messages) {
 
     var app = {
         init : function () {
