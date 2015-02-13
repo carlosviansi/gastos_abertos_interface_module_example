@@ -7,7 +7,7 @@
     "dist/main.css",
     "dist/js/app.js",
     "dist/js/messages.js",
-    "dist/tags/todo.js",
+    "dist/tags/todo.js"
   ],
   "moduleType": [
     "amd"
