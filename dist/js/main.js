@@ -5,8 +5,8 @@
 requirejs.config({
     baseUrl: './js/',
     paths : {
-        riot : '../vendor/riotjs/js/riot',
-        tags : '../tags/'
+        riot : '../vendor/riotjs/js/riot'
+
     },
     packages: [{
         name: "example"

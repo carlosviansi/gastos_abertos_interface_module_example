@@ -2,7 +2,7 @@ define(['riot',  'example/messages'], function (riot, messages) {
 
     var app = {
         init : function () {
-            require(['tags/todo'], function (){
+            require(['example/tags/todo'], function (){
                 riot.mount('todo', { title: 'My TODO app', items: [ {'title':'testando'}, {'title':'testando 2'} ] })
             });
             console.log(messages.getHello());
@@ -11,3 +11,4 @@ define(['riot',  'example/messages'], function (riot, messages) {
 
     return app;
 });
+
