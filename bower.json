@@ -1,9 +1,14 @@
 {
   "name": "gastos_abertos_interface_module_example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/okfn-brasil/gastos_abertos_interface_module_example",
   "authors": "",
-  "main": "main.js",
+  "main": [
+    "dist/main.css",
+    "dist/js/app.js",
+    "dist/js/messages.js",
+    "dist/tags/todo.js",
+  ],
   "moduleType": [
     "amd"
   ],
